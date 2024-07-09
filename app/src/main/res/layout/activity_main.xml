@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/fileNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter file or folder name"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <Button
+        android:id="@+id/createFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create File"
+        android:layout_below="@id/fileNameEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/createFolderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Folder"
+        android:layout_below="@id/createFileButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/fileContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter file content"
+        android:layout_below="@id/createFolderButton"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/writeFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write to File"
+        android:layout_below="@id/fileContentEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/readFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read from File"
+        android:layout_below="@id/writeFileButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/deleteFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete File"
+        android:layout_below="@id/readFileButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
