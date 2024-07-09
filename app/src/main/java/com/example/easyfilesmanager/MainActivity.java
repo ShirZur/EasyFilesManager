@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button writeFileButton;
     private Button readFileButton;
     private Button deleteFileButton;
+    private Button lala;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
